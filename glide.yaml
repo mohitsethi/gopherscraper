@@ -1,0 +1,27 @@
+package: .
+import:
+- package: github.com/PuerkitoBio/goquery
+  version: ^1.0.1
+- package: github.com/codegangsta/negroni
+  version: ^0.2.0
+- package: github.com/dahernan/gopherscraper
+  subpackages:
+  - elasticsearch
+  - jsonrequest
+  - model
+  - redis
+  - routes
+  - scraper
+- package: github.com/julienschmidt/httprouter
+  version: ^1.1.0
+- package: github.com/spf13/viper
+- package: github.com/therealbill/libredis
+  subpackages:
+  - client
+- package: github.com/yosssi/gohtml
+- package: gopkg.in/unrolled/render.v1
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: ^1.6.2
+  subpackages:
+  - convey
